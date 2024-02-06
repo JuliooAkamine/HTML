@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: gray;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            
+            
+        }
+        button{
+            width: 34.53px;
+            height: 24.44px;
+            border: none;
+            margin: 1px;
+            cursor: pointer;
+            
+            
+        }
+
+        input{
+            
+            background-color: white;
+            width: 153px;
+            height: 35px;
+            text-align: center;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 15px;
+
+        }
+
+        #calculadora{
+            padding:25px;
+            background-color: black;
+            width: 153px;
+            height: 253px;
+            padding-top: 15px;
+            border-radius: 15px;
+            
+            
+           
+            
+          
+            
+        }
+
+        button:hover{
+            background-color: rgb(58, 57, 57);
+            color: white;
+        }
+h1{
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+}
+
+
+    </style>
+</head>
+
+<body>
+    
+
+    <div id="calculadora">
+        <div id="inputresult">
+            <h1>Calculadora</h1>
+            <input type="text">
+        </div>
+
+        <table>
+            <td><button onclick="$">%</button></td>
+            <td><button onclick="CE">CE</button></td>
+            <td><button onclick="C">C</button></td>
+            <td><button onclick="apagar">&#9668;</button></td>
+        </table>
+        <table>
+            <td><button onclick="1">1/x</button></td>
+            <td><button onclick="x2">x<sup>2</sup></button></td>
+            <td><button onclick="v2x">v2x</button></td>
+            <td><button onclick="barra">/</button></td>
+        </table>
+        <table>
+            <td><button onclick="7">7</button></td>
+            <td><button onclick="8">8</button></td>
+            <td><button onclick="9">9</button></td>
+            <td><button onclick="X">X</button></td>
+        </table>
+        <table>
+            <td><button onclick="4">4</button></td>
+            <td><button onclick="5">5</button></td>
+            <td><button onclick="6">6</button></td>
+            <td><button onclick="traco">-</button></td>
+        </table>
+        <table>
+            <td><button onclick="1">1</button></td>
+            <td><button onclick="2">2</button></td>
+            <td><button onclick="3">3</button></td>
+            <td><button onclick="adicao">+</button></td>
+        </table>
+        <table>
+            <td><button onclick="maismenos"><sup>+</sup>/-</button></td>
+            <td><button onclick="0">0</button></td>
+            <td><button onclick="virgula">,</button></td>
+            <td><button onclick="igual">=</button></td>
+        </table>
+    </div>
+
+    <script>
+
+
+    </script>
+</body>
+
+</html>

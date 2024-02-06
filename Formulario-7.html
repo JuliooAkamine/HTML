@@ -1,0 +1,133 @@
+<!Doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario</title>
+
+    </head>
+
+    <body>
+        <h1>Trabalhando com Formularios</h1>
+        <hr>
+        <p>Elementos para formulários são voltados á intereção com o usuário. Entrada de dados, Seleção de opções, Processamento para a manipulação de dados entre outros.</p>
+
+        <p>Formularios em HTML são somente um <b>Interface</b>.</p>
+
+        <p>Para que o formulario funcione, é necessário combina-lo com uma <b>Linguagem de programação.</b></p>
+
+        <hr>
+
+        <h2>Exemplos</h2>
+
+        <form action="#" method="post">
+
+            
+
+            <p>
+                <!---->
+                <label for="nome">Nome:</label> <!--required = campo obrigatorio-->
+                <input required type="text" id="nome" name="nome">
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input required type="email" id="email" name="email">
+            </p>
+            <hr>
+           
+            <h3>Input number</h3>
+
+
+            <p>
+                <label for="telefone">Telefone:</label>
+                <input required type="tel" id="telefo ne" name="telefone" placeholder="telefone" > <!--placeholder - deixa como se fosse uma mascara dentro do input para auxiliar o usuario de como preencher o campo.-->
+
+                <!--Autofocus- quando inicia a pagina, inicia o input com esse atributo ja fica marcado, pronto para digitação-->
+            </p>
+            <hr>
+
+            <h3>Input "radio"</h3>
+            <p>Como você se identifica:</p>
+
+
+            <p>
+                <input type="radio" id="masculino" name="masculino" required>
+                <label for="masculino">masculino</label>
+              
+
+                <input type="radio" id="feminino" name="masculino" required>
+                <label for="feminino">feminino</label>
+
+                <!--Neste caso o name deve ser o mesmo para os dois inputs-->
+            </p>
+
+            <hr>
+
+            <h3>Input "checkbox"</h3>
+
+
+            <p>interesses:</p>
+
+            <p>
+                <input type="checkbox" id="html5" name="interesses" >
+                <label for="html5">HTML5</label>
+
+                <input type="checkbox" id="css3" name="interesses" >
+                <label for="css3">CSS3</label>
+
+                <input type="checkbox" id="javascript" name="interesses" >
+                <label for="javascript">JavaScript</label>
+            </p>
+            <hr>
+            <h3>Input "date"</h3>
+
+            <p>
+                <label for="nascimento">data de nascimento</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+            </p>
+
+            <hr>
+
+            <h3>Input "color"</h3>
+
+            <p><label for="cor">qual é a sua cor favorita</label>
+            <input type="color" id="cor" name="cor">
+            </p>
+
+            <hr>
+
+            <h3>Input "Number"</h3>
+
+            <p>
+                <label for="idade"> Quantos anos você tem?</label>
+                <input type="number" id="idade" name="idade">
+            </p>
+            <hr>
+
+            <h3>Tag Select</h3>
+
+            <p><label for="assunto">Assunto:</label>
+
+                <select name="assunto" id="assunto"> <!--para aparecer as opções é preciso usar a tag option, dentro da tag selection-->
+                    <option value=""></option>
+                    <option value="">Elogios</option>
+                    <option value="">Reclamações</option>
+                    <option value="">outros</option>
+                </select>
+            
+            </p>
+            <hr>
+
+            <h3>Tag "textarea"</h3>
+
+            <p>
+                <label for="mensagem">Mensagem:</label> <br>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea> <!--tag textarea usada para criar um campo onde o usuario pode enviar uma mensagem.-->
+            </p>
+
+            <button>Enviar</button>
+            
+
+        </form>
+    </body>
+</html>
