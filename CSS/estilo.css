@@ -1,5 +1,69 @@
 body{
    background-color: #F5DEB3;
-   background-image: url(../imagens/textura01.jpg) 
+   background-image: url(../imagens/textura01.jpg);
+  /* background-repeat: no-repeat;*/
    
+
+   font-family: verdana, Arial, sans-serif;
+   margin: 0 20px;
+
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+hr{
+    border:none;
+    height: 15px;
+    width: 70vh;
+    background-color: purple;
+    border-radius: 5px;
+}
+
+h2{
+    font-style: italic;
+    border-bottom: solid 5px rgb(255, 0, 119);
+    padding-bottom: 8px;
+    color: white;
+    text-shadow: -3px 4px 1px black, red -2px -2px 5px ;
+    text-transform: uppercase;
+}
+
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+li{
+    background-color: #7fffd4;
+    list-style-type: none;
+    padding-top: 4px;
+}
+
+.destaque{
+    background-color: #ffA500;
+    border: solid 2px black;
+    padding: 5px;
+}
+
+.arredondadas{
+    border-radius: 16%;
+}
+
+#centralizado{
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: 200px;
 }
