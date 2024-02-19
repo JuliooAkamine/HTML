@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhando com links</title>
+</head>
+
+<body>
+
+    <a id="inicio"></a>
+
+    <h1>Elementos e atributos de links</h1>
+
+    <hr>
+
+    <h2>Tipos de links</h2>
+
+
+
+    <h3>Absoluto</h3>
+    <p>É aquele tipo de link em que colocamos o endereço (URL) completo da pagina a ser acessada.</p>
+
+    <!--Sempre são utilizados para abrir links externos-->
+
+    <!--O atributo href, indica o endereço do link-->
+
+    <!--O atributo target, indica de que maneira o link sera aberto.-->
+    <p>
+
+        <a href="https://www.sp.senac.br/" target="_blank">SENAC</a>
+
+        <!--Visite o site do <a href="https://www.sp.senac.br/">SENAC</a> desta forma o link absoluto fica visivel para o usuário. -->
+    </p>
+
+    <hr>
+    <!--link relativo = link para acessar pagina/arquivo do próprio site-->
+    <h3>Link relativo</h3>
+
+    <p>É aquele link que abre o arquivo/página a ser acessado no próprio site que estamos trabalhando.</p>
+
+    <p>Acesse o conteúdo anterior, clicando <a href="./exerciciolista.html" target="_self">aqui</a></p>
+
+    <!--para direcionar um usuario para um email/telefones usamos os atributos 'mailto:' e 'tel:'-->
+    <h3>E-mail e telefone</h3>
+
+    <p><b>E-mail:</b> link que abre um programa de email instalado na maquina do usuário.</p>
+    <!--usamos o atributo mailto:(seuemail) para fazer funcionar o link direto para o email-->
+
+    <p>Contato de e-mail <a href="mailto:contato@gmail.com">contato@gmail.com</a></p>
+
+    <!--usamos o atributo "tel:(numero de telefone)" para fazer funcionar o link de telefone-->
+    <p>contato por telefone <a href="tel:11956094387">11956094387</a></p>
+    <hr>
+
+    <!--para criar um link vazio/falso utilizamos o # no atributo href, link vazio é usado para apenas simular comportamentos de links-->
+    <h3>Falso/vaio</h3>
+
+    <p>Utilizamos para simular compartamento de link</p>
+
+    <a href="#">
+        <p>nenhum lugar</p>
+    </a>
+
+    <hr>
+
+    <h3>Link vertical</h3>
+
+    <!--para que o link vertical funcione é preciso criar um id direcionando a âncora.-->
+
+    <p><a href="#fim">Ir para o final da pagina</a></p>
+
+
+
+    <p>Usado para navegações por sessões/areas localizada na mesma página</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dignissimos maxime consequatur soluta sequi
+        laboriosam animi ipsum totam repellendus sed libero sunt, quos eius est consequuntur voluptates. Tenetur,
+        explicabo assumenda.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dignissimos maxime consequatur soluta sequi
+        laboriosam animi ipsum totam repellendus sed libero sunt, quos eius est consequuntur voluptates. Tenetur,
+        explicabo assumenda.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dignissimos maxime consequatur soluta sequi
+        laboriosam animi ipsum totam repellendus sed libero sunt, quos eius est consequuntur voluptates. Tenetur,
+        explicabo assumenda.</p>
+
+    <a id="fim"></a>
+
+    <a href="#inicio">ir para o inicio da pagina</a>
+
+
+    <hr>
+
+    <!--Usado para baixar um arquivo seja ele foto,video,musica etc.-->
+
+    <h3>Link para download</h3>
+
+    <p>Usado para baixar um arquivo</p>
+
+    <!--Adcionar o atributo download depois do "href" para o arquivo se tornar baixavel-->
+    
+    <p><a href="Doc/apostila-web.pdf" download="">Baixe</a> a apostila web</p>
+
+</body>
+
+</html>
