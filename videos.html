@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vídeos</title>
+ 
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo Música e vídeo na página.</h1>
+    <p>Para inserir uma música mp3 em suas páginas web, o arquivo deve estar em uma pasta dentro da pasta raiz do site. No nosso caso a pasta media.</p>
+ 
+    <audio controls> <!-- O atributo CONTROLS faz com que apareça os controles de aúdio -->
+        <source src="media/audio/metalica_nothing.mp3" type="audio/mpeg">
+        <!-- Adicione a tag SOURCE para implementar o vídeo na página junto ao atributo "SRC" -->
+        <!-- Adicione o atributo type para também funcionar -->
+    </audio>
+ 
+    <section>
+        <p>Veja o vídeo a seguir:</p>
+        <video controls>
+            <source src="media/video/london.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video.ogg"> <!-- Usado para Compatibilidade dos navegadores, se caso o navegador não suporte o formato -->
+        </video>
+    </section>
+ 
+    <hr>
+ 
+    <video controls>
+        <source src="media/video/pink-floyd.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        <track
+        kind="subtitles"
+        srclang="pt-br"
+        src="media/video/legenda-ptbr.vtt"
+        label="Português Brasil"
+        >
+ <!--legenda em inglês-->
+        <track
+        kind="subtitles"
+        srclang="en"
+        src="media/video/legenda-en.vtt"
+        label="Inglês"
+        default
+        >
+    </video>
+<br>
+    <section>
+
+        <iframe width="355" height="215" src="https://www.youtube.com/embed/21mDekTZwsw?si=0TR65Vaup-N79fXP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     <!-- A tag <iframe> especifica um quadro embutido.
+        Um quadro embutido é usado para incorporar  outro documento no 
+         documento HTML atual.-->
+    </section>
+
+    <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7216801009745!2d-46.72105332376852!3d-23.506532259581864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefbbafbce37cb%3A0x6dccb90b7d41b24c!2sTiet%C3%AA%20Plaza%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1706729362271!5m2!1spt-BR!2sbr" width="355" height="215" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</body>
+</html>

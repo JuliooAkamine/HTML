@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Exercicio-flex</title>   
+    <style>
+        body{
+            font-family: poppins,sans-serif;
+            background-color: beige;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            flex-flow: wrap ;
+            align-content: space-between;
+            
+            
+        }
+
+        .caixa>img{
+            width: 270px;
+            
+        }
+
+        .caixa{
+            width: 270px;
+            height: 500px;
+            background-color: white;
+            padding: 15px;
+            border: 3px solid rgba(0, 0, 0, 0.096);
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 15px;
+            
+        }
+
+        #container2{
+            display: flex;
+            justify-content: center;
+            flex-flow: wrap ;
+            align-content: space-between;
+            margin-top: 15px;
+            
+            
+        }
+
+        .caixa2>img{
+            height: 246px;
+            width: 270px;
+            object-fit: cover;
+            
+        }
+
+        .caixa2{
+            width: 270px;
+            height: 530px;
+            background-color: white;
+            padding: 15px;
+            border: 3px solid rgba(0, 0, 0, 0.096);
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 15px;
+            
+        }
+
+        #container3{
+            display: flex;
+            justify-content: center;
+            flex-flow: wrap ;
+            align-content: space-between;
+            margin-top: 15px;
+            
+            
+        }
+
+        .caixa3>img{
+            height: 246px;
+            width: 270px;
+            object-fit: cover;
+            
+            
+        }
+
+        .caixa3{
+            width: 270px;
+            height: 530px;
+            background-color: white;
+            padding: 15px;
+            border: 3px solid rgba(0, 0, 0, 0.096);
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 15px;
+            
+        }
+      
+        .btn{
+            width: 100px;
+            height: 50px;
+            border: none;
+            background-color: gray;
+            color: white;
+            transition: 300ms;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            transition: 300ms;
+            
+            font-size: 16px;
+            background-color: rgb(82, 82, 82);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #container-main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container-main">
+        <h1>Modelo de página</h1>
+        <hr style="width: 40%;">
+        <h2>Página de teste</h2>
+        
+        <div>
+            <a href="#carros"><button class="btn">Carros</button></a>
+            <a href="#pessoas"><button class="btn">Pessoas</button></a>
+            <a href="#frutas"><button class="btn">Frutas</button></a>
+        </div>
+    </div>
+    
+
+    <div id="container">
+        <div class="caixa" >
+            <img src="carro-antigo.webp" alt="imagem-carro-antingo">
+            <h2>Carros antigos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam quod repellendus porro dicta, natus ex maiores ducimus atque inventore obcaecati aspernatur at, ad maxime tempore eveniet consequatur culpa. Ea.</p>
+        </div>
+        <div class="caixa" >
+            <img src="carroNovo.jpg" alt="imagem-carro-novo">
+            <h2>Carros antigos</h2>
+            <a  id="frutas"></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam quod repellendus porro dicta, natus ex maiores ducimus atque inventore obcaecati aspernatur at, ad maxime tempore eveniet consequatur culpa. Ea.</p>
+        </div>
+        <div class="caixa" >
+            <img src="populares.jpg" alt="imagem-carro-popular">
+            <h2>Carros antigos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam quod repellendus porro dicta, natus ex maiores ducimus atque inventore obcaecati aspernatur at, ad maxime tempore eveniet consequatur culpa. Ea.</p>
+        </div>
+    </div>
+
+    <div id="container2">
+        <div class="caixa2" >
+            
+            <img src="citricas.png" alt="imagem-frutas-citricas">
+            <h2>Frutas Citricas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam quod repellendus porro dicta, natus ex maiores ducimus atque inventore obcaecati aspernatur at, ad maxime tempore eveniet consequatur culpa. Ea.</p>
+        </div>
+        <div class="caixa2" >
+            <img src="frutas-vermelhas.png" alt="imagem-frutas-vermelhas">
+            <h2>Frutas Vermelhas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam quod repellendus porro dicta, natus ex maiores ducimus atque inventore obcaecati aspernatur at, ad maxime tempore eveniet consequatur culpa. Ea.</p>
+        </div>
+        <div class="caixa2" >
+            <img src="verdes.jpg" alt="imagem-frutas-verdes">
+            <h2>Frutas Verdes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam quod repellendus porro dicta, natus ex maiores ducimus atque inventore obcaecati aspernatur at, ad maxime tempore eveniet consequatur culpa. Ea.</p>
+        </div>
+    </div>
+
+    <div id="container3">
+        <div class="caixa3" >
+            
+            <img src="adultos.jpg" alt="imagem-frutas-citricas">
+            <h2>Adultos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam quod repellendus porro dicta, natus ex maiores ducimus atque inventore obcaecati aspernatur at, ad maxime tempore eveniet consequatur culpa. Ea.</p>
+        </div>
+        <div class="caixa3" >
+            <img src="crianca.png" alt="imagem-frutas-vermelhas">
+            <h2>Crianças</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam quod repellendus porro dicta, natus ex maiores ducimus atque inventore obcaecati aspernatur at, ad maxime tempore eveniet consequatur culpa. Ea.</p>
+        </div>
+        <div class="caixa3" >
+            <img src="idosos.webp" alt="imagem-frutas-verdes">
+            <h2>Idosos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam quod repellendus porro dicta, natus ex maiores ducimus atque inventore obcaecati aspernatur at, ad maxime tempore eveniet consequatur culpa. Ea.</p>
+        </div>
+    </div>
+    <a id="pessoas"></a>
+    
+</body>
+</html>
