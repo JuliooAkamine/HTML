@@ -11,6 +11,7 @@
 
 }
 body{
+   
     font-family: 'ubuntu', sans-serif;
     background-image: url(../imagem/hypnotize.png);
     background-attachment: fixed;
@@ -32,8 +33,7 @@ img{
 /*Regras do topo*/
 
 #topo{
-    background-color: rgba(24, 56, 29, 0.9
-    );
+    background-color: rgba(24, 56, 29, 0.9);
     border-bottom: solid 1px black ;
     text-align: center;
     margin-bottom: 15px;
@@ -104,7 +104,7 @@ nav a:hover, nav a:focus, #iconMenu:hover, #iconMenu:focus {
 
 .rodape-conteudo{
     padding: 15px;
-    color: fff;
+    color: #fff;
 }
 
 .rodape-conteudo ul{
@@ -421,4 +421,193 @@ box-shadow: gray;
     color: white;
     margin: 0 auto;
     cursor: pointer;
+}
+
+@media screen and (min-width:700px) {
+  
+    #topo{
+        position: sticky;
+        width: 100%;
+        top:0;
+        z-index: 1000;
+        height: 80px;
+      
+    }
+
+    #topo>div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    h1 img{
+        margin-left: 30px;
+        margin-top: 20px;
+        width: 150px;}
+    
+    nav{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       }
+
+    #iconMenu{
+        display: none;
+    }   
+
+    nav a{
+        padding: 10px;
+    }
+
+    .rodape-conteudo{
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo-rodape, .menu-rodape, .redes {
+        margin: 0 auto;
+    }
+    
+    #assinatura{
+        padding-top: 1%;
+    }
+    
+    .card-conteudo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .acessorios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .produtos {
+        margin: 10px 1%;
+        height: auto;
+    }
+    
+    .acesse{
+        margin: 0 auto;
+    }
+    
+    #card-pacote{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-pacote-info{
+        margin: 0.4%;
+        overflow: hidden;
+    }
+
+    .card-pacote-info>img{
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .acessorios{
+        margin: 0 15%;
+    }
+
+   
+}
+
+@media screen and (min-width:930px) {
+    .card-conteudo figure img{
+        width: 210px;
+        height: 150px;
+    }
+
+    .text-destaque h2{
+        padding-top: 10px;
+       
+    }
+
+    .text-destaque p{
+        margin: 0;
+    }
+
+    #frase p {
+        padding-top: 22px;
+        font-size: 1.1em;
+    }
+
+    .produtos{
+        height: 250px;
+    }
+
+    .acesse{
+        margin: 20px auto;
+    }
+
+    #desc{margin-top: 25px;}
+
+    #conteudo-contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo-info article{
+        margin: 15px 5px;
+        padding: 2%;
+    }
+    .cont-contato {
+        height: 708px;
+    }
+    .localizacao iframe{
+        height: 500px;
+        width: 400px;
+
+    }
+    #Localizacao-end{
+        height: 745px;
+    
+    }
+
+    iframe {
+        margin: auto;
+        max-width: 90%;
+        display: block;
+        padding: 2% 0;
+    }
+
+    
+   
+}
+
+@media screen and (min-width: 1200px){
+    nav{
+        
+        justify-content: space-evenly;
+        width: 980px;
+        margin-left: 14%;
+    }
+
+   
+  
+
+    .conteudo{
+        width: 980px;
+    }
+
+    #Localizacao-end{
+        height: 745px;
+    
+    }
+
+ 
+
 }
